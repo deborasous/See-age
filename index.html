@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <title>Verificador de hora</title>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <h2>Verificador de idade</h2>
+        </header>
+        <main>
+            <section class="conteiner">
+                <form action="#" class="grid">
+                    <div>
+                        <label for="html">Ano de Nascimento: </label>
+                        <input type="number" name="year" class="year">
+                    </div>
+                    <div class="gender">
+                        Sexo:
+                        <input type="radio" name="gender" id="male" checked>
+                        <label for="male">Masculino</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Feminino</label><br>
+                        <input type="button" class ="button" value="Verificar" onclick="verificar()">
+                    </div>
+                </form>
+                <div>
+                    <p class="res">Aqui você ver sua idade.</p>
+                    <img class="resImg">
+                </div>
+                <div class="alert"> 
+                  Preencha os dados acima para ver o resultado!
+                </div> 
+            </section>
+        </main>
+        <footer>
+            <p>&#169; CursoemVideo</p>
+        </footer>
+    </div>
+</body>
+<script src="verifIdade.js"></script>
+</html>
